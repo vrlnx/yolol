@@ -36,8 +36,8 @@ if NOT :insideSafeZone then :Transponder=0 end goto1
 
 ```
 if :Mine==1 then :Laser=1 :Collector=0 goto2 end goto3
-:Laser=0 :Collector=1 :TLFR+=20 goto1
-:Laser=0 :Collector=0 goto1
+:MiningLaserOn=0 :Collector=1 goto1
+:MiningLaserOn=0 :Collector=0 goto1
 
 // :Mine = A hybrid button with name "Mine"
 ```
