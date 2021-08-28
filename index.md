@@ -12,6 +12,15 @@ Having trouble with VRL's YOLOL scripts? Check out VRL's [wiki page](https://git
 > ### Adding codes when requested
 > I'll try my best to structure the YOLOL code to make sense.
 
+## Management
+
+**Generator Script**
+
+```
+MaxRate=:MaxBatteryPower
+:GeneratorUnitLimit=:MinEPS+(MaxRate-:StoredBatteryPower)/85
+```
+
 ## Navigation
 
 **Auto-Approach Lite**
@@ -58,3 +67,4 @@ b+=1 :Index=b i2=:Index+1+":" m2=:Material-a-c v2=:Volume
 // :ScanWait = Changed the YOLOL chip name from "ChipWait"
 // :Scanned = Text panel with name "Scanned"
 ```
+
