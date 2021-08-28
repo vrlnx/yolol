@@ -19,6 +19,9 @@ Having trouble with VRL's YOLOL scripts? Check out VRL's [wiki page](https://git
 ```
 MaxRate=:MaxBatteryPower
 :GeneratorUnitLimit=:MinEPS+(MaxRate-:StoredBatteryPower)/85
+// :MinEPS = Hybrid button with name "MinESP"
+// :MinEPS values On = 65
+// This allows you to have a pre-charged power when using Lasers
 ```
 
 ## Navigation
