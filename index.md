@@ -19,6 +19,7 @@ Having trouble with VRL's YOLOL scripts? Check out VRL's [wiki page](https://git
 ```
 MaxRate=:MaxBatteryPower
 :GeneratorUnitLimit=:MinEPS+(MaxRate-:StoredBatteryPower)/85
+
 // :MinEPS = Hybrid button with name "MinESP"
 // :MinEPS values On = 65
 // This allows you to have a pre-charged power when using Lasers
@@ -34,7 +35,7 @@ if :RF>x then :FcuForward=y*:RF/1000 goto4 end goto5
 if :RF<z then goto5 end goto3
 :FcuForward=0 :Range=0 :Approach=-1
 goto1
-// Designed by vrl
+
 // [Z] - Approach Limit [Changable]
 // [Y] - Approach efficency [Changable]
 // :RF - RangeFinder Distance
@@ -43,7 +44,10 @@ goto1
 **Secure Transponder**
 
 ```
-if NOT:insideSafeZone then :Transponder=0 end goto1
+if NOT:insideSafeZone then:transponderActive=0 end goto1
+
+// ":transponderActive" can be changed to ":Transponder"
+// if your ship is using a setup like this.
 ```
 
 ## Mining
