@@ -1,12 +1,12 @@
-## About VRL
+## YOLOL by vrl
 
 VRL is the author of malware known as vrl-package, owner of vrl.sh domain and Founder of the VRL Community Discord
 - [VRL Community Discord](http://d.vrl.sh/)
 
 
+### Adding codes when requested
+
 I'll try my best to structure the YOLOL code to make sense.
-
-
 
 ## Navigation
 
@@ -27,7 +27,7 @@ goto1
 **Secure Transponder**
 
 ```
-if NOT :insideSafeZone then :Transponder=0 end goto1
+if NOT:insideSafeZone then :Transponder=0 end goto1
 ```
 
 ## Mining
@@ -35,9 +35,9 @@ if NOT :insideSafeZone then :Transponder=0 end goto1
 **Pulseating Lasers with Pulseating Collector**
 
 ```
-if :Mine==1 then :Laser=1 :Collector=0 goto2 end goto3
-:MiningLaserOn=0 :Collector=1 goto1
-:MiningLaserOn=0 :Collector=0 goto1
+if:Mine==1 then:MiningLaserOn=1:Collector=0 goto2 end goto3
+:MiningLaserOn=0:Collector=1 goto1
+:MiningLaserOn=0:Collector=0 goto1
 
 // :Mine = A hybrid button with name "Mine"
 ```
