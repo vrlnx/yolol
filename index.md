@@ -1,12 +1,16 @@
 ## YOLOL by vrl
 
+
+### Who is VRL?
+
 VRL is the author of malware known as vrl-package, owner of vrl.sh domain and Founder of the VRL Community Discord
-- [VRL Community Discord](http://d.vrl.sh/)
 
+### Support or Contact
 
-### Adding codes when requested
+Having trouble with VRL's YOLOL scripts? Check out VRL's [wiki page](https://github.com/vrlnx/yolol/wiki) or [create a ticket on Discord](http://d.vrl.sh/) and I'll try to help you sort it out.
 
-I'll try my best to structure the YOLOL code to make sense.
+> ### Adding codes when requested
+> I'll try my best to structure the YOLOL code to make sense.
 
 ## Navigation
 
