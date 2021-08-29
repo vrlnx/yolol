@@ -52,6 +52,7 @@ goto1
 // [Z] - Approach Limit [Changable]
 // [Y] - Approach coefficency [Changable]
 // :RF - RangeFinder Distance
+// :Range - Renamed from RangeFinderOnState
 ```
 
 **Secure Transponder**
