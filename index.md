@@ -53,6 +53,8 @@ goto1
 // [Y] - Approach coefficency [Changable]
 // :RF - RangeFinder Distance
 // :Range - Renamed from RangeFinderOnState
+// `Approach` is the name of the YOLOL Chip, 
+// and also a Hybrid button with off state `-1` and on state `0`
 ```
 
 **Secure Transponder**
