@@ -44,7 +44,7 @@ MaxRate=:MaxBatteryPower if:Power==0 then goto3 end
 
 ```
 z=20 x=1000.000 y=25
-if :RF>x then :FcuForward=y*:RF/1000 goto4 end goto5
+if :RF<x then :FcuForward=y*:RF/1000 goto3 end goto5
 if :RF<z then goto5 end goto3
 :FcuForward=0 :Range=0 :Approach=-1
 goto1
