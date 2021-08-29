@@ -37,7 +37,7 @@ if :RF<z then goto5 end goto3
 goto1
 
 // [Z] - Approach Limit [Changable]
-// [Y] - Approach efficency [Changable]
+// [Y] - Approach coefficency [Changable]
 // :RF - RangeFinder Distance
 ```
 
