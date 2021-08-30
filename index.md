@@ -18,7 +18,7 @@ Having trouble with VRL's YOLOL scripts? Check out VRL's [wiki page](https://git
 
 ```
 MaxRate=:MaxBatteryPower
-:GeneratorUnitLimit=:MinEPS+(MaxRate-:StoredBatteryPower)/85 goto2
+:GeneratorUnitRateLimit=:MinEPS+(MaxRate-:StoredBatteryPower)/85 goto2
 
 // :MinEPS = Hybrid button with name "MinESP"
 // :MinEPS values On = 65
@@ -29,7 +29,7 @@ MaxRate=:MaxBatteryPower
 
 ```
 MaxRate=:MaxBatteryPower if:Power==0 then goto3 end
-:GeneratorUnitLimit=:MinEPS+(MaxRate-:StoredBatteryPower)/85 goto1
+:GeneratorUnitRateLimit=:MinEPS+(MaxRate-:StoredBatteryPower)/85 goto2
 :GeneratorUnitLimit=0 goto1
 
 // :MinEPS = Hybrid button with name "MinESP"
@@ -57,6 +57,11 @@ goto1
 // `Approach` is the name of the YOLOL Chip, 
 // and also a Hybrid button with off state `-1` and on state `0`
 ```
+
+```
+Note about this
+```
+
 
 **Secure Transponder**
 
