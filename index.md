@@ -58,10 +58,6 @@ goto1
 // and also a Hybrid button with off state `-1` and on state `0`
 ```
 
-```
-Note about this
-```
-
 
 **Secure Transponder**
 
