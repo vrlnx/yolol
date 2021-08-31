@@ -25,6 +25,7 @@ MaxRate=:MaxBatteryPower
 // This allows you to have a pre-charged power when using Lasers
 ```
 
+
 **Generator Script with Power button**
 
 ```
@@ -38,6 +39,7 @@ MaxRate=:MaxBatteryPower if:Power==0 then goto3 end
 // :Power = Name of the button that cut power to the system
 // :Power on state value of `1` and off state value of `0`
 ```
+
 
 ## Navigation
 
