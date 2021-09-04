@@ -85,7 +85,7 @@ if:Mine==1 then:MiningLaserOn=1:Collector=0 goto2 end goto3
 **Smart scanning**
 
 ```
-a=" Ore" b=0 c=" Crystal" n="\n"
+a=" Ore" b=0 c=" Crystal" n="\n" :Scan=1
 sr=:ScanResults i2="" m2="" v2="" :ScanWait=3*(sr>2)
 :Index=b i1=:Index+1+":" m1=:Material-a-c v1=:Volume goto5-(sr>1)
 b+=1 :Index=b i2=:Index+1+":" m2=:Material-a-c v2=:Volume
