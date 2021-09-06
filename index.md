@@ -113,6 +113,7 @@ if:TractorOn AND:RF<=2 then:Lock=1 goto3endgoto1
 // Approach is the name of the YOLOL chip that is with the auto-approach script. But is used as a dead-man switch in this script to cross check and verify.
 ```
 
+
 **Auto-Approach Lite Modified for Smart Astroid grabber**
 ```
 z=20 x=1000.000 y=65 :Rmk=1
