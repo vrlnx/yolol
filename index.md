@@ -95,3 +95,36 @@ b+=1 :Index=b i2=:Index+1+":" m2=:Material-a-c v2=:Volume
 // :Scanned = Text panel with name "Scanned"
 ```
 
+## Ship spesific modification
+#### Ship: Pincer mod
+
+ **Smart Astroid grabber with Auto-approach Lite modified**
+```
+if:TractorOn==1 then:Rmk=1 goto2end if:Approach==-1 then:Rmk=0endgoto1
+:Beam_length=(:RF-.2) :Beam=:Beam_length :Lock=:RF==3
+if:TractorOn AND:RF<=2 then:Lock=1 goto3endgoto1
+
+// TractorOn = On state of the tractor beam
+// Beam_length = is the replacement for "tractorBeamPosition"
+// Beam = is the replacement for "tractorBeamSearchLength"
+// RF = is the replacement for "RangeFinderDistance"
+// Rmk = is the replacement for "RangeFinderOnState"
+// lock = is the replacement for "CargoBeamOnState"
+// Approach is the name of the YOLOL chip that is with the auto-approach script. But is used as a dead-man switch in this script to cross check and verify.
+```
+
+**Auto-Approach Lite Modified for Smart Astroid grabber**
+```
+z=20 x=1000.000 y=65 :Rmk=1
+if:RF<x then:FcuForward=y*:RF/100 goto3 end goto5
+if:RF<z then goto4 end goto2
+:FcuForward=0 :Rmk=0 :Approach=-1
+goto1
+
+// [Z] - Approach Limit [Changable]
+// [Y] - Approach coefficency [Changable]
+// :RF - RangeFinder Distance
+// :Range - Renamed from RangeFinderOnState
+// `Approach` is the name of the YOLOL Chip, 
+// and also a Hybrid button with off state `-1` and on state `0`
+```
