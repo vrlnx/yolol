@@ -102,7 +102,7 @@ b+=1 :Index=b i2=:Index+1+":" m2=:Material-a-c v2=:Volume
 
 ```
 if:TractorOn==1 then:Rmk=1 goto2end if:Approach==-1 then:Rmk=0endgoto1
-:Beam_length=(:RF-.2) :Beam=:Beam_length :Lock=:RF==3
+:Beam_length=(:RF-.2) :Beam=:Beam_length
 if:TractorOn AND:RF<=2 then:Lock=1 goto3endgoto1
 
 // TractorOn = On state of the tractor beam
