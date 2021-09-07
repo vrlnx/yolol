@@ -99,6 +99,7 @@ b+=1 :Index=b i2=:Index+1+":" m2=:Material-a-c v2=:Volume
 #### Ship: Pincer mod
 
  **Smart Astroid grabber with Auto-approach Lite modified**
+
 ```
 if:TractorOn==1 then:Rmk=1 goto2end if:Approach==-1 then:Rmk=0endgoto1
 :Beam_length=(:RF-.2) :Beam=:Beam_length :Lock=:RF==3
@@ -115,6 +116,7 @@ if:TractorOn AND:RF<=2 then:Lock=1 goto3endgoto1
 
 
 **Auto-Approach Lite Modified for Smart Astroid grabber**
+
 ```
 z=20 x=1000.000 y=65 :Rmk=1
 if:RF<x then:FcuForward=y*:RF/100 goto3 end goto5
