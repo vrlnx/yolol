@@ -128,10 +128,10 @@ sr=:ScanResults :ScanWait=5
 L1=n+m1+n+z+k L2=n+m2+n+x+k
 L3=n+m1+n+zz+s L4=n+m2+n+xx+s
 T=n+d+:s
-:Classifier=L1+n+L2+n+T
+:Scanned=L1+n+L2+n+T
 :ScanWait=20 if:Scanner==1 thengoto1end
 
-:Classifier=L3+n+L4+n+T
+:Scanned=L3+n+L4+n+T
 :ScanWait=20 if:Scanner==1 thengoto1end
 goto9
 ```
