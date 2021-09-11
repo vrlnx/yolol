@@ -17,8 +17,8 @@ Having trouble with VRL's YOLOL scripts? Check out VRL's [wiki page](https://git
 **Generator Script**
 
 ```
-MaxRate=:MaxBatteryPower
-:GeneratorUnitRateLimit=:MinEPS+(MaxRate-:StoredBatteryPower)/100 goto2
+MaxR=:MaxBatteryPower
+:GeneratorUnitRateLimit=:MinEPS+(MaxR-:StoredBatteryPower)/100 goto2
 
 // :MinEPS = Hybrid button with name "MinESP"
 // :MinEPS values On = 65
@@ -29,8 +29,8 @@ MaxRate=:MaxBatteryPower
 **Generator Script with Power button**
 
 ```
-MaxRate=:MaxBatteryPower if:Power==0 then goto3 end
-:GeneratorUnitRateLimit=:MinEPS+(MaxRate-:StoredBatteryPower)/100 goto2
+MaxR=:MaxBatteryPower if:Power==0 then goto3 end
+:GeneratorUnitRateLimit=:MinEPS+(MaxR-:StoredBatteryPower)/100 goto2
 :GeneratorUnitLimit=0 goto1
 
 // :MinEPS = Hybrid button with name "MinEPS"
