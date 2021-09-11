@@ -105,6 +105,49 @@ b+=1 :Index=b i2=:Index+1+":" m2=:Material-a-c v2=:Volume
 // :Scanned = Text panel with name "Scanned"
 ```
 
+
+### Smart scanning with 2 YOLOL chip and 1 Memory Chip
+
+
+*Config - Memory Chip*
+```
+Field name 1: v1 Value: 0
+Field name 2: v2 Value: 0
+Field name 3:  s Value: 11
+```
+
+
+*Name the YOLOL chip: ScanWait*
+```
+n="\n" k=" kv" a=" Ore" b=0 c=" Crystal" d="Tier: "
+a=" Ore" c=" Crystal" k=" kv" s=" stk" d="Tier: " :Scan=1
+sr=:ScanResults :ScanWait=5
+:Index=0 m1=:Material-a-c :v1=:Volume
+:Index=1 m2=:Material-a-c :v2=:Volume
+:calc=0 z=:v1 x=:v2 zz=:v1/1728 xx=:v2/1728
+L1=n+m1+n+z+k L2=n+m2+n+x+k
+L3=n+m1+n+zz+s L4=n+m2+n+xx+s
+T=n+d+:s
+:Classifier=L1+n+L2+n+T
+:ScanWait=20 if:Scanner==1 thengoto1end
+
+:Classifier=L3+n+L4+n+T
+:ScanWait=20 if:Scanner==1 thengoto1end
+goto9
+```
+
+
+*Name the YOLOL chip: Calc*
+```
+:s=0 a=(:v1+:v2) b=6047 c=7212 d=7359 e=7522 f=14055 g=18061 h=30546
+i=75923 j=198390 k=433682 l=811196 ifa>=b then :s=1 end
+ifa>=c then :s=2 end ifa>=d then :s=3 end ifa>=e then :s=4 end
+ifa>=f then :s=5 end ifa>=g then :s=6 end ifa>=e then :s=4 end
+if a>=e then :s=4 end if a>=f then :s=5 end if a>=g then :s=6 end
+if a>=k then :s=10 end if a>=l then :s=11 end
+calc=-1 goto1
+```
+
 ## Ship spesific modification
 #### Ship: Pincer mod
 
