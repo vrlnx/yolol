@@ -141,8 +141,8 @@ goto9
 ```
 :s=0 a=(:v1+:v2) b=6047 c=7212 d=7359 e=7522 f=14055 g=18061 h=30546
 i=75923 j=198390 k=433682 l=811196 ifa>=b then :s=1 end
-ifa>=c then :s=2 end ifa>=d then :s=3 end ifa>=e then :s=4 end
-ifa>=f then :s=5 end ifa>=g then :s=6 end ifa>=e then :s=4 end
+if a>=c then :s=2 end if a>=d then :s=3 end if a>=e then :s=4 end
+if a>=f then :s=5 end if a>=g then :s=6 end if a>=e then :s=4 end
 if a>=e then :s=4 end if a>=f then :s=5 end if a>=g then :s=6 end
 if a>=k then :s=10 end if a>=l then :s=11 end
 calc=-1 goto1
