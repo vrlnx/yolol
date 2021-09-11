@@ -13,8 +13,18 @@ Having trouble with VRL's YOLOL scripts? Check out VRL's [wiki page](https://git
 > I'll try my best to structure the YOLOL code to make sense.
 
 ## Management
+**Headless Generator Script**
 
-**Generator Script**
+```
+MaxR=:MaxBatteryPower
+:GeneratorUnitRateLimit=(MaxR-:StoredBatteryPower)/100 goto2
+
+// :MinEPS = Hybrid button with name "MinESP"
+// :MinEPS values On = 65
+// This allows you to have a pre-charged power when using Lasers
+```
+
+**Generator Script with a MinEPS button**
 
 ```
 MaxR=:MaxBatteryPower
@@ -26,7 +36,7 @@ MaxR=:MaxBatteryPower
 ```
 
 
-**Generator Script with Power button**
+**Generator Script with Power(shutdown) button and MinEPS button**
 
 ```
 MaxR=:MaxBatteryPower if:Power==0 then goto3 end
@@ -98,6 +108,7 @@ b+=1 :Index=b i2=:Index+1+":" m2=:Material-a-c v2=:Volume
 ## Ship spesific modification
 #### Ship: Pincer mod
 
+
  **Smart Astroid grabber with Auto-approach Lite modified**
 
 ```
@@ -113,6 +124,7 @@ if:TractorOn AND:RF<=2 then:Lock=1 goto3endgoto1
 // lock = is the replacement for "CargoBeamOnState"
 // Approach is the name of the YOLOL chip that is with the auto-approach script. But is used as a dead-man switch in this script to cross check and verify.
 ```
+
 
 
 **Auto-Approach Lite Modified for Smart Astroid grabber**
