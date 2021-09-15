@@ -105,6 +105,21 @@ b+=1 :Index=b i2=:Index+1+":" m2=:Material-a-c v2=:Volume
 // :Scanned = Text panel with name "Scanned"
 ```
 
+**Smart Auto Centering Lasers**
+
+```
+co=90
+:ML=22*:Mine-:R :RT=co/:R :LT=-:RT goto2
+
+// R = Rangefinder Distance
+// Mine = Rangefinder On State
+// ML = MiningLaser On State
+// RT = Right turret
+// LT = Left Turret
+// co = Convergent point
+// 22 = The start length of the Rangefinder, if it's more than 22 Lasers will not turn on.
+```
+
 
 ### Smart scanning with 2 YOLOL chip and 1 Memory Chip
 
