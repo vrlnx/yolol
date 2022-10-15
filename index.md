@@ -163,7 +163,7 @@ if a>=k then :s=10 end if a>=l then :s=11 end
 calc=-1 goto1
 ```
 
-## Ship spesific modification
+## Ship specific modification
 #### Ship: Pincer mod
 
 
